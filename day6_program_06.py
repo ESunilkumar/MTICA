@@ -1,0 +1,13 @@
+#
+#print([i for i in range(50,1001) if i%2==0])
+
+#print([i for i in range(122,167) if i%7==0])
+
+ans=[]
+for i in range(900,1001):
+    if '6' in str(i):
+        ans.append(i)
+print(ans)
+
+ans=[i for i in range(900,1001) if '6' in str(i)]
+print(ans)
