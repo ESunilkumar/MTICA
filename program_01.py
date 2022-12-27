@@ -1,12 +1,12 @@
-student=[[98,"sunilkumar",99,90],[97,"anilkumar",98,99],[96,"amalamma",99,99],[100,"arshitha",100,100]]
-student.sort()
-print(student)
+lst=[]
+while(True):
+    inpNum=int(input("enter value(0 to end):"))
+    if inpNum==0:
+        break
+    else:
+        lst.append(inpNum)
+lst.sort()
+print("max",lst[-1])
+print("min:",lst[0])
+print("avg",round(sum(lst)/len(lst)),1)
 
-student.sort(key=lambda temp:temp[2])
-print(student)
-student.sort(key=lambda temp:temp[3])
-print(student)
-student.sort(key=lambda  temp:temp[1])
-print(student)
-student.sort(key=lambda temp:temp[0])
-print(student)0
